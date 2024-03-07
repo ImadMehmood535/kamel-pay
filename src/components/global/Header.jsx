@@ -1,19 +1,31 @@
 "use client";
 import React, { useState } from "react";
-import { Link } from "react-scroll";
 import Image from "next/image";
 import { logo } from "@/assets";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { menuItems } from "@/data/header";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState(null);
+  const [hoveredItem, setHoveredItem] = useState(null);
+
+  const path = usePathname();
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleMouseEnter = (itemId) => {
+    setHoveredItem(itemId);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredItem(null);
+  };
+
   return (
-    <nav className="bg-white text-sm   rounded-[62px] text-black   mx-auto w-full max-w-[80%] z-[99999] fixed top-8 left-0 right-0 ">
+    <nav className="bg-white text-sm   rounded-[62px] text-black   mx-auto layoutWidth z-[99999] fixed top-8 left-0 right-0 ">
       <div className="container relative  w-full  px-4 py-2  flex justify-between items-center">
         <div className="lg:hidden lg:static absolute  right-2 z-50">
           <button
@@ -55,7 +67,7 @@ const Header = () => {
         </div>
 
         <div className="max-w-[200px] w-full">
-          <Link to="home" spy={true} smooth={true} className="cursor-pointer">
+          <Link href="/" className="cursor-pointer">
             <Image
               src={logo}
               alt="logo"
@@ -67,103 +79,29 @@ const Header = () => {
         </div>
         <div className="flex justify-center items-center w-full ">
           <ul
-            className={`lg:flex lg:flex-row flex-col lg:h-full h-[100vh] lg:py-2 pt-24 lg:pr-4 items-start ${
+            className={`lg:flex lg:flex-row flex-col lg:h-full h-[100vh] lg:py-2 pt-24 items-start ${
               isMenuOpen ? "flex" : "hidden"
-            }  lg:max-w-[400px] max-w-[300px] px-4 lg:px-0 gap-4 lg:gap-0 font-bold lg:font-normal lg:text-center lg:rounded-[67px]   pt-20 w-full   items-start lg:items-center xl:justify-center  lg:static fixed top-0 right-0   text-black md:text-black bg-white lg:bg-webGray-0 `}
+            }  lg:max-w-[400px]  max-w-[300px] px-4   gap-4 lg:gap-0 font-bold lg:font-normal lg:text-center lg:rounded-[67px]   pt-20 w-full   items-start lg:items-center xl:justify-center  lg:static fixed top-0 right-0   text-black md:text-black bg-white lg:bg-webGray-0`}
           >
-            <li className="max-w-[100px]  w-full">
-              <Link
-                to="home"
-                spy={true}
-                smooth={true}
-                activeClass=""
-                className={`cursor-pointer   hover:text-webRed-0 ${
-                  activeLink === "home"
-                    ? "bg-webLightYellow-0 p-1 px-3 rounded-[35px]"
-                    : ""
-                }`}
-                onSetActive={() => setActiveLink("home")}
+            {menuItems?.map((item, index) => (
+              <li
+                key={index}
+                onMouseEnter={() => handleMouseEnter(item.id)}
+                onMouseLeave={handleMouseLeave}
+                className="max-w-[100px] w-full whitespace-nowrap"
               >
-                Home
-              </Link>
-            </li>
-
-            <li className="max-w-[100px]  w-full">
-              <Link
-                to="about"
-                spy={true}
-                smooth={true}
-                activeClass="bg-webLightYellow-0 p-1 px-3 rounded-[35px]"
-                className={`cursor-pointer opacity-100 hover:text-webRed-0 ${
-                  activeLink === "about"
-                    ? "bg-webLightYellow-0 p-1 px-3 rounded-[35px]"
-                    : ""
-                }`}
-                onSetActive={() => setActiveLink("about")}
-              >
-                About
-              </Link>
-            </li>
-            <li className="max-w-[100px]  w-full  ">
-              <Link
-                to="products"
-                spy={true}
-                smooth={true}
-                activeClass="text-[#FF5555]"
-                className={`cursor-pointer opacity-100 hover:text-webRed-0 ${
-                  activeLink === "products" ? "" : ""
-                }`}
-                onSetActive={() => setActiveLink("products")}
-              >
-                Products
-              </Link>
-            </li>
-            <li className="max-w-[100px]  w-full">
-              <Link
-                to="media"
-                spy={true}
-                smooth={true}
-                activeClass="text-[#FF5555]"
-                className={`cursor-pointer opacity-100 hover:text-webRed-0 ${
-                  activeLink === "media" ? "" : ""
-                }`}
-                onSetActive={() => setActiveLink("media")}
-              >
-                Media
-              </Link>
-            </li>
-            <li className="max-w-[100px]  w-full">
-              <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                activeClass="text-[#FF5555]"
-                className={`cursor-pointer  whitespace-nowrap hover:text-webRed-0 ${
-                  activeLink === "contact" ? "" : ""
-                }`}
-                onSetActive={() => setActiveLink("contact")}
-              >
-                Contact Us
-              </Link>
-              <div className="w-full">
-                <div className="block lg:hidden pt-20 cursor-pointer w-full ">
-                  <Link
-                    href={"/"}
-                    className="bg-webLightBlue-0 max-w-[200px] w-full cursor-pointer hover:bg-webRed-0 transition-all text-black    text-center px-4 py-3 font-bold  whitespace-nowrap  rounded-[30px]"
-                  >
-                    Connect With Us
-                  </Link>
-                </div>
-                <div className="block lg:hidden pt-8 cursor-pointer w-full">
-                  <Link
-                    href={"/"}
-                    className="bg-webBlack-0  max-w-[200px] w-full cursor-pointer hover:bg-webRed-0 transition-all text-white   text-center px-6 py-3  whitespace-nowrap  rounded-[30px]"
-                  >
-                    Get Kamel Pay
-                  </Link>
-                </div>
-              </div>
-            </li>
+                <Link
+                  href={item.to}
+                  className={`cursor-pointer hover:text-webRed-0 transition-colors ${
+                    path === item.to || `/${hoveredItem}` === item?.to
+                      ? "bg-webLightYellow-0 py-1.5 px-3 rounded-[35px] whitespace-nowrap transition-all duration-500"
+                      : "py-1 px-3"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 

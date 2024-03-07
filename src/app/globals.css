@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: black;
+.layoutWidth {
+  @apply w-full max-w-[90%] lg:max-w-[93%] mx-auto;
+}
+
+h1 {
+  @apply text-3xl  lg:text-5xl 2xl:text-6xl  font-bold;
 }
