@@ -9,6 +9,10 @@ import box8 from "./images/box8.png";
 import box7 from "./images/box7.png";
 import box9 from "./images/box9.png";
 import box10 from "./images/box10.png";
+import fbicon from "./images/fbicon.svg";
+import insticon from "./images/insticon.svg";
+import yticon from "./images/yticon.svg";
+import lnicon from "./images/lnicon.svg";
 import getReady from "./images/getReady.png";
 
 export {
@@ -24,4 +28,8 @@ export {
   box9,
   box10,
   getReady,
+  fbicon,
+  insticon,
+  yticon,
+  lnicon,
 };
