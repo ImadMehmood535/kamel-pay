@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <nav className="bg-white text-sm   rounded-[62px] text-black   mx-auto layoutWidth z-[99999] fixed top-8 left-0 right-0 ">
-      <div className="container relative  w-full  px-4 py-2  flex justify-between items-center">
+      <div className=" relative  w-full  px-4 py-2  flex justify-between items-center">
         <div className="lg:hidden lg:static absolute  right-2 z-50">
           <button
             onClick={handleMenuToggle}
