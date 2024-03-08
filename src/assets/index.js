@@ -9,6 +9,7 @@ import box8 from "./images/box8.png";
 import box7 from "./images/box7.png";
 import box9 from "./images/box9.png";
 import box10 from "./images/box10.png";
+import getReady from "./images/getReady.png";
 
 export {
   logo,
@@ -22,4 +23,5 @@ export {
   box7,
   box9,
   box10,
+  getReady,
 };
