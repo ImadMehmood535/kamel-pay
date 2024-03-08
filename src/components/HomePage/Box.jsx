@@ -16,10 +16,10 @@ const Box = ({
 }) => {
   return (
     <div
-      className={`${background} lg:${widthDiv} h-[35vh] lg:h-[58vh] w-full px-6 py-4 relative rounded-[25px]`}
+      className={`${background} lg:${widthDiv} w-full px-6 py-4 relative rounded-[25px] h-[350px]`}
     >
       <div
-        className={` ${color}  flex flex-col items-start justify-start gap-3`}
+        className={` ${color}  flex flex-col items-start justify-start gap-4`}
       >
         <h3 className="opacity-25">{number}</h3>
         <h4>{heading}</h4>
@@ -31,7 +31,7 @@ const Box = ({
           alt="box1"
           className={` ${
             absolute
-              ? "absolute bottom-0 left-1/2 transform -translate-x-1/2 "
+              ? "absolute bottom-0 left-1/2 transform -translate-x-1/2"
               : ""
           } ${pictureWidthMobile} ${pictureWidth} w-full mx-auto`}
         />

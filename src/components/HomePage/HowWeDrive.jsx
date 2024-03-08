@@ -14,7 +14,7 @@ const HowWeDrive = () => {
       </h2>
       <div className="w-full h-full">
         <Fade direction="up" cascade triggerOnce delay={200} fraction={0.2}>
-          <div className=" my-4 flex flex-wrap lg:flex-nowrap justify-center gap-3 items-center lg:max-w-[85%] w-full mx-auto">
+          <div className=" my-4 flex flex-wrap lg:flex-nowrap justify-center gap-3 items-center lg:max-w-[75%] w-full mx-auto">
             <Box
               background={"bg-[#F8F8F8]"}
               number={"01"}
@@ -41,7 +41,7 @@ const HowWeDrive = () => {
           </div>
         </Fade>
         <Fade direction="up" cascade triggerOnce delay={200} fraction={0.2}>
-          <div className="flex my-4 flex-wrap lg:flex-nowrap justify-center gap-3 items-center lg:max-w-[85%] w-full mx-auto">
+          <div className="flex my-4 flex-wrap lg:flex-nowrap justify-center gap-3 items-center lg:max-w-[75%] w-full mx-auto">
             <BoxExtraWidth
               background={box3}
               number={"03"}
@@ -69,7 +69,7 @@ const HowWeDrive = () => {
           </div>
         </Fade>
         <Fade direction="up" cascade triggerOnce delay={200} fraction={0.2}>
-          <div className="flex my-4 flex-wrap lg:flex-nowrap justify-center gap-3 items-center lg:max-w-[85%] w-full mx-auto">
+          <div className="flex my-4 flex-wrap lg:flex-nowrap justify-center gap-3 items-center lg:max-w-[75%] w-full mx-auto">
             <Box
               background={"bg-webLightYellow-0"}
               number={"05"}
@@ -97,7 +97,7 @@ const HowWeDrive = () => {
         </Fade>
 
         <Fade direction="up" cascade triggerOnce delay={200} fraction={0.2}>
-          <div className=" my-4 flex flex-wrap lg:flex-nowrap justify-center gap-3 items-center lg:max-w-[85%] w-full mx-auto">
+          <div className=" my-4 flex flex-wrap lg:flex-nowrap justify-center gap-3 items-center lg:max-w-[75%] w-full mx-auto">
             <Box
               background={"bg-[#FFE6E2]"}
               number={"07"}
@@ -121,7 +121,7 @@ const HowWeDrive = () => {
           </div>
         </Fade>
         <Fade direction="up" cascade triggerOnce delay={200} fraction={0.2}>
-          <div className="flex my-4 flex-wrap lg:flex-nowrap justify-center gap-3 items-center lg:max-w-[85%] w-full mx-auto">
+          <div className="flex my-4 flex-wrap lg:flex-nowrap justify-center gap-3 items-center lg:max-w-[75%] w-full mx-auto">
             <Box
               background={"bg-[#000080]"}
               number={"09"}

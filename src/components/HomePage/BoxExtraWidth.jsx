@@ -14,7 +14,7 @@ const BoxExtraWidth = ({ background, number, heading, paragraph }) => {
   console.log("background");
   return (
     <div
-      className="lg:max-w-[60%] h-[35vh] lg:h-[58vh] w-full px-6 py-4  rounded-[25px]"
+      className="lg:max-w-[60%] h-[350px] w-full px-6 py-4  rounded-[25px]"
       style={backgroundStyle}
     >
       <div className="flex flex-col items-start justify-start gap-3 text-white">
