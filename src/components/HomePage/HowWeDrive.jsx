@@ -13,7 +13,7 @@ const HowWeDrive = () => {
         How We Drive Employee <br /> Happiness
       </h2>
       <div className="w-full h-full">
-        <Fade direction="up" cascade triggerOnce delay={200} fraction={0.1}>
+        {/* <Fade direction="up" cascade triggerOnce delay={200} fraction={0.1}> */}
           <div className=" my-4 flex flex-wrap lg:flex-nowrap justify-center gap-3 items-center lg:max-w-[85%] w-full mx-auto">
             <Box
               background={"bg-[#F8F8F8]"}
@@ -146,7 +146,7 @@ const HowWeDrive = () => {
               }
             />
           </div>
-        </Fade>
+        {/* </Fade> */}
       </div>
     </div>
   );

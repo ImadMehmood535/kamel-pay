@@ -21,15 +21,15 @@ const ReadyToTransform = () => {
         <CustomButton2 text={"Schedule for a Demo"} />
         {/* </Fade> */}
 
-        <Fade direction="up" triggerOnce fraction={0.2}>
-          <Image
-            src={getReady}
-            width={2000}
-            height={2000}
-            alt="getReady"
-            className="max-w-[80%] w-full mx-auto mt-12 "
-          />
-        </Fade>
+        {/* <Fade direction="up" triggerOnce fraction={0.2}> */}
+        <Image
+          src={getReady}
+          width={2000}
+          height={2000}
+          alt="getReady"
+          className="max-w-[80%] w-full mx-auto mt-12 "
+        />
+        {/* </Fade> */}
       </div>
     </div>
   );
