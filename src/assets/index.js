@@ -14,6 +14,7 @@ import insticon from "./images/insticon.svg";
 import yticon from "./images/yticon.svg";
 import lnicon from "./images/lnicon.svg";
 import getReady from "./images/getReady.png";
+import footerlogo from "./images/footerlogo.svg";
 
 export {
   logo,
@@ -32,4 +33,5 @@ export {
   insticon,
   yticon,
   lnicon,
+  footerlogo,
 };

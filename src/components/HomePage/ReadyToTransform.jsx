@@ -7,7 +7,7 @@ import { Fade } from "react-awesome-reveal";
 
 const ReadyToTransform = () => {
   return (
-    <div className="w-full mx-auto  pt-20 flex flex-col gap-14">
+    <div className="w-full mx-auto  pt-20 flex flex-col gap-14 bg-white">
       <div className="flex flex-col justify-center items-center gap-8">
         {/* <Fade direction="left" cascade> */}
         <h2 className="text-center">

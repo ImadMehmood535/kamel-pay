@@ -7,9 +7,9 @@ import { Fade } from "react-awesome-reveal";
 
 const Banner = () => {
   return (
-    <div className="bg-webBlue-0 h-full py-20 relative w-full  ">
+    <div className="bg-webBlue-0 h-full pt-20 relative w-full  ">
       <div className="layoutWidth flex flex-wrap lg:flex-nowrap justify-between h-screen items-center  z-10">
-        <div className="w-full  text-white text-center lg:text-start flex flex-col  gap-8 ">
+        <div className="w-full  text-white text-center lg:text-start flex flex-col   gap-8 ">
           <Fade direction="left" cascade>
             <h1>
               Unlocking <br />
@@ -23,7 +23,7 @@ const Banner = () => {
               business.
             </p>
           </Fade>
-          <div className="flex justify-center flex-wrap lg:flex-nowrap lg:justify-start  items-center gap-0 lg:gap-4">
+          <div className="flex justify-center flex-wrap lg:flex-nowrap lg:justify-start  items-center gap-12 lg:gap-4">
             <Fade direction="up" cascade delay={1200}>
               <CustomButton text={"Learn More"} />
               <CustomButton text={"Get Kamel Pay Now"} transparent={true} />
@@ -40,7 +40,7 @@ const Banner = () => {
             className="mx-auto lg:ml-auto"
           />
         </div>
-        <div className="block lg:hidden w-full ">
+        {/* <div className="block lg:hidden w-full ">
           <Image
             src={mobilehomeBanner}
             width={700}
@@ -48,7 +48,7 @@ const Banner = () => {
             alt="home banner"
             className="mx-auto lg:ml-auto"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

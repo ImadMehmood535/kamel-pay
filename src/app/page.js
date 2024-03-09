@@ -10,10 +10,12 @@ export default function Home() {
       <div className="layoutWidth">
         <HowWeDrive />
       </div>
-      {/* <div className="sticky top-0 "> */}
+      <div className="sticky top-0 z-0 ">
         <WhyChooseKamel />
-      {/* </div> */}
-      <ReadyToTransform />
-     </>
+      </div>
+      <div className="relative  z-20">
+        <ReadyToTransform />
+      </div>
+    </>
   );
 }
