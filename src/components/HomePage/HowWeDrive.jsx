@@ -1,19 +1,42 @@
 "use client";
 import { box1, box10, box3, box4, box7, box8, box9 } from "@/assets";
-import Image from "next/image";
-import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import Box from "./Box";
 import BoxExtraWidth from "./BoxExtraWidth";
 import { Fade } from "react-awesome-reveal";
 
+const cardVariants = {
+  offscreen: {
+    y: 300,
+  },
+  onscreen: {
+    y: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8,
+    },
+  },
+};
+
 const HowWeDrive = () => {
+  
   return (
     <div className="w-full mx-auto  py-20 flex flex-col gap-14">
       <h2 className="text-center">
         How We Drive Employee <br /> Happiness
       </h2>
-      <div className="w-full h-full">
-        {/* <Fade direction="up" cascade triggerOnce delay={200} fraction={0.1}> */}
+      <motion.div
+       className="card-container"
+       initial="offscreen"
+       whileInView="onscreen"
+       viewport={{ once: true, amount: 0.2 }}
+      >
+          <motion.div variants={cardVariants}>
+        <div className="w-full h-full">
+          {/* <Fade direction="up" cascade triggerOnce delay={200} fraction={0.1}> */}
           <div className=" my-4 flex flex-wrap lg:flex-nowrap justify-center gap-3 items-center lg:max-w-[85%] w-full mx-auto">
             <Box
               background={"bg-[#F8F8F8]"}
@@ -26,6 +49,7 @@ const HowWeDrive = () => {
                 "Beyond just salary processing, we offer a range of services tailored to enhance the lives of your employees."
               }
             />
+
             <Box
               background={"bg-[#F1F5FE]"}
               number={"02"}
@@ -146,8 +170,10 @@ const HowWeDrive = () => {
               }
             />
           </div>
-        {/* </Fade> */}
-      </div>
+          {/* </Fade> */}
+        </div>
+          </motion.div>
+      </motion.div>
     </div>
   );
 };

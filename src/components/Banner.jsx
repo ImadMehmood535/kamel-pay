@@ -2,12 +2,15 @@
 import React from "react";
 import CustomButton from "./CustomButton";
 import Image from "next/image";
-import { homeBanner, mobilehomeBanner } from "@/assets";
+import { homeBanner, lines, mobilehomeBanner } from "@/assets";
 import { Fade } from "react-awesome-reveal";
 
 const Banner = () => {
   return (
     <div className="bg-webBlue-0 h-full pt-20 relative w-full  ">
+      <div className="absolute">
+        <Image src={lines} width={20000} height={20000} alt="lines" className="object-cover object-center" />
+      </div>
       <div className="layoutWidth flex flex-wrap lg:flex-nowrap justify-between h-screen items-center  z-10">
         <div className="w-full  text-white text-center lg:text-start flex flex-col   gap-8 ">
           <Fade direction="left" cascade>

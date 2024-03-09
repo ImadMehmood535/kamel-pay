@@ -65,13 +65,13 @@ const Footer = () => {
                 <div className="flex justify-start flex-wrap lg:flex-nowrap gap-3 w-full">
                   <input
                     type="email"
-                    className="rounded-[50px] py-4 px-3 w-full"
+                    className="rounded-[50px] py-3 px-3 w-full text-black"
                   />
                   <div className="w-full ">
                     <button
                       type="submit"
                       className={` bg-black border border-transparent hover:bg-transparent hover:border-[1px]  hover:border-white  
-        scale-75 lg:scale-100 whitespace-nowrap w-fit cursor-pointer  px-14 lg:px-2 py-8 lg:py-4 rounded-[67px] transition-all duration-500 `}
+        scale-75 lg:scale-100 whitespace-nowrap w-fit cursor-pointer  px-14 lg:px-2 py-8 lg:py-3 rounded-[67px] transition-all duration-500 `}
                     >
                       Subscribe
                     </button>
@@ -86,8 +86,8 @@ const Footer = () => {
           <div className="flex justify-between flex-wrap lg:flex-nowrap w-full h-full ">
             <div className="flex flex-col gap-6 max-w-[400px] w-full font-light">
               <p className="font-light">
-                Discover the ease of managing your finances with Kamel Pay&apos;s
-                prepaid cards and intuitive digital app.
+                Discover the ease of managing your finances with Kamel
+                Pay&apos;s prepaid cards and intuitive digital app.
               </p>
               <div className="flex flex-col font-light gap-4">
                 <div className="flex justify-start gap-2 lg:gap-7">
