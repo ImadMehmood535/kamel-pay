@@ -1,6 +1,6 @@
 import { box1 } from "@/assets";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 
 const Box = ({
   background,
@@ -14,27 +14,11 @@ const Box = ({
   pictureWidthMobile = "max-w-[350px]",
   color,
 }) => {
-  const [hover, setHover] = useState(false);
-
-  const handleMouseEnter = () => {
-    setHover(true);
-  };
-
-  const handleMouseLeave = () => {
-    setHover(false);
-  };
-
   return (
     <div
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      className={`${background} lg:${widthDiv} hover:bg-black     cursor-pointer transition-all w-full px-6 py-4 relative rounded-[25px] h-[350px]`}
+      className={`${background} hover:bg-black ${color} hover:text-white lg:${widthDiv} w-full px-6 py-4 relative rounded-[25px] h-[350px] cursor-pointer`}
     >
-      <div
-        className={`  ${
-          hover ? "hover:text-white/70 " : color
-        }   flex flex-col items-start justify-start gap-4`}
-      >
+      <div className={`   flex flex-col items-start justify-start gap-4`}>
         <h3 className="opacity-25">{number}</h3>
         <h4>{heading}</h4>
         <p>{paragraph}</p>
