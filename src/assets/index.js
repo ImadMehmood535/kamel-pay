@@ -1,6 +1,7 @@
 import logo from "./images/logo.svg";
 import lines from "./images/lines.svg";
 import homeBanner from "./images/homeBanner.png";
+import about from "./images/about.png";
 import mobilehomeBanner from "./images/mobileHomeBanner.png";
 import box1 from "./images/box1.png";
 import box3 from "./images/box3.png";
@@ -17,6 +18,7 @@ import getReady from "./images/getReady.png";
 import footerlogo from "./images/footerlogo.svg";
 
 export {
+  about,
   logo,
   lines,
   homeBanner,

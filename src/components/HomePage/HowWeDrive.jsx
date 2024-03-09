@@ -32,7 +32,7 @@ const HowWeDrive = () => {
        className="card-container"
        initial="offscreen"
        whileInView="onscreen"
-       viewport={{ once: true, amount: 0.2 }}
+       viewport={{ once: true, amount: 0.1 }}
       >
           <motion.div variants={cardVariants}>
         <div className="w-full h-full">
