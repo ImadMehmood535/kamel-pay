@@ -28,7 +28,7 @@ const WhyChoose = () => {
       viewport={{ once: true, amount: 0.1 }}
     >
       <motion.div variants={cardVariants}>
-        <div className="bg-webBlue-0  w-full p-12 relative ">
+        <div className="bg-webBlue-0  w-full  py-24 lg:py-12 relative ">
           <div className="flex justify-between gap-4 flex-wrap lg:flex-nowrap  layoutWidth relative">
             <Fade direction="left" cascade triggerOnce className="w-full">
               <div className="flex flex-col gap-8 max-w-[800px] w-full">
