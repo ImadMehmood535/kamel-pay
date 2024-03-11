@@ -16,6 +16,11 @@ import yticon from "./images/yticon.svg";
 import lnicon from "./images/lnicon.svg";
 import getReady from "./images/getReady.png";
 import footerlogo from "./images/footerlogo.svg";
+import about1 from "./images/about1.png"
+import about2 from "./images/about2.png"
+import whychoose1 from "./images/whychoose1.png"
+import whychoose2 from "./images/whychoose2.png"
+import whychoose3 from "./images/whychoose3.png"
 
 export {
   about,
@@ -36,4 +41,9 @@ export {
   yticon,
   lnicon,
   footerlogo,
+  about1,
+  about2,
+  whychoose1,
+  whychoose2,
+  whychoose3
 };

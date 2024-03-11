@@ -21,7 +21,20 @@ export default function Home() {
         <WhyChooseKamel />
       </div>
       <div className="relative  z-20">
-        <ReadyToTransform />
+        <ReadyToTransform
+          heading={
+            <>
+              Ready to Transform Your <br /> Workforce?
+            </>
+          }
+          paragh={
+            <>
+              Get in touch with us today to learn how Kamelpay can elevate
+              employee satisfaction <br />
+              and drive productivity in your organization.
+            </>
+          }
+        />
       </div>
     </>
   );

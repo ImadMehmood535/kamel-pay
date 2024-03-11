@@ -6,7 +6,7 @@ import { getReady } from "@/assets";
 import { Fade } from "react-awesome-reveal";
 import { motion, useAnimation } from "framer-motion";
 
-const ReadyToTransform = () => {
+const ReadyToTransform = ({heading, paragh , btnText}) => {
   const cardVariants = {
     offscreen: {
       y: 300,
@@ -21,16 +21,14 @@ const ReadyToTransform = () => {
     },
   };
   return (
-    <div className="w-full mx-auto  pt-20 flex flex-col gap-14 bg-white">
+    <div className="w-full mx-auto  pt-20 flex flex-col gap-14 bg-white layoutWidth">
       <div className="flex flex-col justify-center items-center gap-8">
         {/* <Fade direction="left" cascade> */}
         <h2 className="text-center">
-          Ready to Transform Your <br /> Workforce?
+          {heading}
         </h2>
-        <p className="text-center">
-          Get in touch with us today to learn how Kamelpay can elevate employee
-          satisfaction <br />
-          and drive productivity in your organization.
+        <p className="text-center max-w-[700px]">
+        <>{paragh}</>
         </p>
         <CustomButton2 text={"Schedule for a Demo"} />
         {/* </Fade> */}
