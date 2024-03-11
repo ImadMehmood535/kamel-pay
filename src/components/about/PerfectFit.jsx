@@ -9,7 +9,7 @@ import { Fade } from "react-awesome-reveal";
 
 const PerfectFit = () => {
   return (
-    <div className="w-full mx-auto layoutWidth  py-20 flex flex-col gap-14">
+    <div className="w-full mx-auto layoutWidth  py-20 flex flex-col gap-14   ">
       <h2 className="text-center">
         Find Your Perfect Fit <br /> With Us
       </h2>
@@ -25,8 +25,8 @@ const PerfectFit = () => {
           />
         </Fade>
 
-        <Fade direction="right" triggerOnce>
-          <div className="flex flex-col gap-4">
+        <Fade direction="right" triggerOnce className="">
+          <div className="flex  flex-col gap-4">
             <div className="flex flex-col px-4 py-3 bg-[#F1F5FE] rounded-[25px] gap-4 max-w-[550px] w-full">
               <p className="font-bold text-webBlue-0">
                 Our payroll cards are designed to simplify salary processing and
@@ -75,13 +75,13 @@ const PerfectFit = () => {
             <CustomButton2 text={"Get Corporate Expenses Card"} />
           </div>
         </Fade>
-        <Fade direction="right" triggerOnce>
+        <Fade direction="right" triggerOnce className="">
           <Image
             src={about2}
             width={1000}
             height={1000}
             alt="about1"
-            className="max-w-[500px] w-full"
+            className="max-w-[500px] w-full "
           />
         </Fade>
       </div>

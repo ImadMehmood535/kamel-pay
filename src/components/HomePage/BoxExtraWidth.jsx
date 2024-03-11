@@ -10,8 +10,7 @@ const BoxExtraWidth = ({ background, number, heading, paragraph }) => {
       }
     : {};
 
-  console.log(background, "background");
-  console.log("background");
+ 
   return (
     <div
       className="lg:max-w-[60%] h-[350px] w-full px-6 py-4  rounded-[25px]"

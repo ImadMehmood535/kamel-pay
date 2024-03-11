@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
+/* html,
+.hideOverflow {
   overflow-x: hidden;
-}
+} */
 
 .layoutWidth {
-  @apply w-full  max-w-[90%] lg:max-w-[93%] 2xl:max-w-[1600px] mx-auto ;
+  @apply w-full  max-w-[90%] lg:max-w-[93%] 2xl:max-w-[1600px] mx-auto;
 }
 
 h1 {
@@ -27,19 +27,4 @@ h4 {
 
 .backgroundImage {
   background: url(../assets/images/box3.png);
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-up {
-  animation: fadeUp 0.5s ease-out;
 }
