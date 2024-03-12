@@ -28,3 +28,13 @@ h4 {
 .backgroundImage {
   background: url(../assets/images/box3.png);
 }
+
+.boxGradient {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.51) 100%
+  );
+  border-radius: 20px;
+
+}

@@ -1,7 +1,12 @@
 import { homeBanner } from "@/assets";
 import Banner from "@/components/Banner";
+import BoxScroll from "@/components/HomePage/BoxScroll";
+import BoxScroll2 from "@/components/HomePage/BoxScroll2";
+import BoxScroll3 from "@/components/HomePage/BoxScroll3";
+import BoxScroll4 from "@/components/HomePage/BoxScroll4";
 import HowWeDrive from "@/components/HomePage/HowWeDrive";
 import ReadyToTransform from "@/components/HomePage/ReadyToTransform";
+import Smark from "@/components/HomePage/Smark";
 import WhyChooseKamel from "@/components/HomePage/WhyChooseKamel";
 
 export default function Home() {
@@ -20,7 +25,25 @@ export default function Home() {
       <div className="sticky top-0 z-0 ">
         <WhyChooseKamel />
       </div>
-      <div className="relative  z-20">
+
+      <div className="sticky top-16  z-10">
+        <Smark />
+      </div>
+
+      <div className="sticky top-16  z-20">
+        <BoxScroll />
+      </div>
+      <div className="sticky top-16  z-20">
+        <BoxScroll2 />
+      </div>
+      <div className="sticky top-16  z-20">
+        <BoxScroll3 />
+      </div>
+      <div className="sticky top-16  z-20">
+        <BoxScroll4 />
+      </div>
+
+      <div className="relative  z-30">
         <ReadyToTransform
           heading={
             <>
