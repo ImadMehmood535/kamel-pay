@@ -1,9 +1,9 @@
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/global/Header";
 import Footer from "@/components/global/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = DM_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Kamel Pay",
@@ -21,5 +21,5 @@ export default function RootLayout({ children }) {
         </div>
       </body>
     </html>
-  );
+  ); 
 }

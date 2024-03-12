@@ -38,3 +38,12 @@ h4 {
   border-radius: 20px;
   opacity: 0.9;
 }
+
+@font-face {
+  font-family: "MontserratFont";
+  src: url("/src/fonts/MontserratAlternates-Bold.otf") format("opentype");
+}
+
+h1 {
+  font-family: "MontserratFont", sans-serif !important;
+}
