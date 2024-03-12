@@ -4,6 +4,7 @@ import BoxScroll from "@/components/HomePage/BoxScroll";
 import BoxScroll2 from "@/components/HomePage/BoxScroll2";
 import BoxScroll3 from "@/components/HomePage/BoxScroll3";
 import BoxScroll4 from "@/components/HomePage/BoxScroll4";
+import Circles from "@/components/HomePage/Circles";
 import HowWeDrive from "@/components/HomePage/HowWeDrive";
 import ReadyToTransform from "@/components/HomePage/ReadyToTransform";
 import Smark from "@/components/HomePage/Smark";
@@ -26,22 +27,28 @@ export default function Home() {
         <WhyChooseKamel />
       </div>
 
+      <div className=" hidden lg:block  relative top-16  z-10">
+        <Circles />
+      </div>
       <div className="sticky top-16  z-10">
         <Smark />
       </div>
 
-      <div className="sticky top-16  z-20">
+      
+
+      <div className="sticky top-16 layoutWidth  z-20">
         <BoxScroll />
       </div>
-      <div className="sticky top-16  z-20">
-        <BoxScroll2 />
-      </div>
-      <div className="sticky top-16  z-20">
-        <BoxScroll3 />
-      </div>
-      <div className="sticky top-16  z-20">
-        <BoxScroll4 />
-      </div>
+      <div className="sticky top-16 layoutWidth  z-20">
+       <BoxScroll2 />
+     </div>
+     <div className="sticky top-16 layoutWidth  z-20">
+       <BoxScroll3 />
+     </div>
+     <div className="sticky top-16 layoutWidth  z-20">
+       <BoxScroll4 />
+     </div>  
+      
 
       <div className="relative  z-30">
         <ReadyToTransform

@@ -1,10 +1,10 @@
-import { s } from "@/assets";
+import { circle, s } from "@/assets";
 import Image from "next/image";
 import React from "react";
 
 const Smark = () => {
   return (
-    <div className="flex justify-center items-center w-full h-screen ">
+    <div className="flex justify-center items-center w-full h-screen relative">
       <Image
         src={s}
         alt="s"

@@ -9,16 +9,16 @@ const BoxScroll3 = () => {
   console.log(ScrollY, "ScrollY");
 
   return (
-    <div className="grid grid-cols-4 justify-evenly h-screen px-2">
+    <div className="grid grid-cols-1 lg:grid-cols-4 justify-evenly h-screen px-2">
       <div className="col-span-2"></div>
 
-      <div className="col-span-1 mt-[10rem]">
+      <div className="col-span-1 mt-[70%]">
         <SBox
           number={"03"}
           head={
             <>
-             Simplify Payroll <br />
-             Processing
+              Simplify Payroll <br />
+              Processing
             </>
           }
           paragh={
@@ -27,8 +27,6 @@ const BoxScroll3 = () => {
         />
       </div>
       <div className="col-span-1"></div>
-
-    
     </div>
   );
 };

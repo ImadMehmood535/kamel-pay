@@ -22,6 +22,7 @@ import whychoose1 from "./images/whychoose1.png"
 import whychoose2 from "./images/whychoose2.png"
 import whychoose3 from "./images/whychoose3.png"
 import s from "./images/s.png";
+import circle from "./images/circle.svg"
 
 
 
@@ -50,4 +51,5 @@ export {
   whychoose2,
   whychoose3,
   s,
+  circle,
 };

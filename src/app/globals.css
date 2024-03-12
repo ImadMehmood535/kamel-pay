@@ -32,9 +32,9 @@ h4 {
 .boxGradient {
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.15) 0%,
-    rgba(255, 255, 255, 0.51) 100%
+    rgb(42, 14, 98) 0%,
+    rgba(63, 46, 97) 100%
   );
   border-radius: 20px;
-
+  opacity: 0.9;
 }
